@@ -1,0 +1,152 @@
+extends layout
+
+block content
+  doctype html
+  html
+    head
+      meta(charset='utf-8')
+    body
+      .slide
+            button#prev(type='button')
+              img(src='images/prev.png')
+            | &#x9;&#x9;&#x9;
+            button#next(type='button')
+              img(src='images/next.png')
+            | &#x9;&#x9;&#x9;
+            ul.frame
+              li#photo1.index_li
+                .desc_say
+                  p.interview_title &#xC791;&#xC740;&#xC0AC;&#xD68C;&#xB294; &#xC5B4;&#xB5A4; &#xACF3;&#xC77C;&#xAE4C;?
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.interview_main_text
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  a(href='')
+              | &#x9;&#x9;&#x9;&#x9;
+              li#photo2.index_li
+                .desc_say
+                  p.interview_title &#xAC01;&#xC790;&#xC758; &#xC0DD;&#xAC01;&#xACFC; &#xAC10;&#xC815;&#xC744; &#xB098;&#xB204;&#xB294; &#xACF3;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.interview_main_text
+                    | &#xD3C9;&#xC18C;&#xC5D0; &#xD558;&#xACE0; &#xC2F6;&#xC5C8;&#xB358; &#xD65C;&#xB3D9;&#xC744; &#xD558;&#xBA70; &#xB2F9;&#xC2E0;&#xC774; &#xB290;&#xAF08;&#xB358; &#xAC10;&#xC815;&#xC744;
+                    br
+                    | &#xAC19;&#xC740; &#xACF5;&#xAC04;&#xACFC; &#xAC19;&#xC740; &#xC2DC;&#xAC04;&#xC744; &#xACF5;&#xC720;&#xD558;&#xB294; &#xC6B0;&#xB9AC; &#xC548;&#xC5D0;&#xC11C; &#xB098;&#xB204;&#xC5B4;&#xC8FC;&#xC138;&#xC694;.
+                  p.interview_main_text &#xC791;&#xC740;&#xC0AC;&#xD68C;&#xB294; &#xB098;&#xB9CC;&#xC758; &#xC0DD;&#xAC01;&#xACFC; &#xAC10;&#xC815;&#xC744; &#xC6B0;&#xB9AC;&#xC758; &#xACBD;&#xD5D8;&#xC73C;&#xB85C; &#xB9CC;&#xB4DC;&#xB294; &#xACF3;&#xC785;&#xB2C8;&#xB2E4;.
+              | &#x9;&#x9;&#x9;&#x9;
+              li#photo3.index_li
+                .desc_say
+                  p.interview_title &#xB098;&#xC640; &#xC6B0;&#xB9AC;&#xC5D0; &#xB300;&#xD574; &#xD559;&#xC2B5;&#xD558;&#xB294; &#xACF3;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.interview_main_text
+                    | &#xB3C5;&#xC11C;, &#xC608;&#xC220; &#xC804;&#xC2DC; &#xAC10;&#xC0C1;, &#xC601;&#xC0C1; &#xC81C;&#xC791; &#xBB50;&#xB4E0; &#xC88B;&#xC544;&#xC694;.
+                    br
+                    | &#xC791;&#xC740;&#xC0AC;&#xD68C;&#xB294; &#xB098;, &#xADF8;&#xB9AC;&#xACE0; &#xC6B0;&#xB9AC;&#xAC00; &#xD3C9;&#xC18C; &#xC6D0;&#xD558;&#xB358; &#xAC83;&#xC5D0; &#xB300;&#xD574; &#xD559;&#xC2B5;&#xD558;&#xB294;
+                    br
+                    | &#xACF3;&#xC785;&#xB2C8;&#xB2E4;.
+                  p.interview_main_text
+                    | &#xD3C9;&#xC18C;&#xC5D0; &#xC2DC;&#xAC04;&#xC774; &#xC5C6;&#xC5B4;&#xC11C;, &#xB2E4;&#xC9D0;&#xC774; &#xC624;&#xB798;&#xAC00;&#xC9C0; &#xC54A;&#xC544;&#xC11C;
+                    br
+                    | &#xD558;&#xC9C0; &#xBABB;&#xD588;&#xB358; &#xAC78;&#xB4E4;&#xC744; &#xC791;&#xC740; &#xC0AC;&#xD68C; &#xC548;&#xC5D0;&#xC11C; &#xD568;&#xAED8;&#xD574;&#xC694;.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li#photo4.index_li
+                .desc_say(style='width:50%;left:30%;top:35%')
+                  p.interview_title 우리의 경험을 토대로 세상을 변화시키는 곳, 작은사회
+                  a(href='')
+          | &#x9;
+      .information_border
+        .information
+          .letter
+            span.index_span &#xC791;&#xC740;&#xC0AC;&#xD68C; &#xC0B4;&#xC9DD; &#xC5FF;&#xBCF4;&#xAE30;
+          | &#x9;&#x9;
+          a(href='/bookclub')
+            .section
+              | &#xC791;&#xC740;&#xC0AC;&#xC0C9;
+              .photo
+                img(src='images/reading.png', width='100%')
+          | &#x9;&#x9;
+          a(href='/artclub')
+            .section
+              | &#xC791;&#xC740;&#xC608;&#xC220;
+              .photo
+                img(src='images/art.png', width='100%')
+          | &#x9;&#x9;
+          a(href='/videoclub')
+            .section
+              | &#xC791;&#xC740;&#xC601;&#xC0C1;
+              .photo
+                img(src='images/video.png', width='100%')
+        | &#x9;
+        .information
+          .letter
+            span.index_span &#xBAA8;&#xC784; &#xC774;&#xC57C;&#xAE30;
+          | &#x9;&#x9;
+          a(href='#')
+            .section
+              | &#xAC10;&#xC0C1;&#xD3C9;
+              .photo
+                img(src='images/bookcover.png', width='100%')
+          | &#x9;&#x9;
+          a(href='#')
+            .section
+              | &#xC804;&#xC2DC; &#xAC10;&#xC0C1;
+              .photo
+                img(src='images/seeing.png', width='100%')
+          | &#x9;&#x9;
+          a(href='#')
+            .section
+              | &#xC601;&#xD654; &#xC81C;&#xC791;
+              .photo
+                img(src='images/making.png', width='100%')
+      | &#x9;
+      .aside
+        .letter
+          span.index_span &#xC791;&#xC740;&#xC0AC;&#xD68C;&#xC758; &#xBE44;&#xC804;
+        | &#x9;&#x9;
+        .vision
+          h1 Do best things.
+          | &#x9;&#x9;&#x9;
+          p &#xC704;&#xB300;&#xD55C; &#xC77C;&#xC744; &#xD558;&#xC790;.
+        | &#x9;&#x9;
+        | &#x9;&#x9;
+        .letter
+          span.index_span Family site
+        | &#x9;&#x9;
+        a(href='#')
+          .leader
+            .helper
+            | &#xC791;&#xC740;&#xC0AC;&#xD68C; &#xC6B4;&#xC601;&#xC9C4; &#xD398;&#xC774;&#xC9C0;
+        | &#x9;&#x9;
+        .letter
+          span.index_span SNS
+        | &#x9;&#x9;
+        .sns
+          a(href='#')
+            .sns_contents
+              .sns_image
+                img(src='images/facebook.png', width='100%')
+              | &#x9;&#x9;&#x9;&#x9;
+              .sns_name facebook
+          | &#x9;&#x9;&#x9;
+          a(href='#')
+            .sns_contents
+              .sns_image
+                img(src='images/instagram.png', width='100%')
+              | &#x9;&#x9;&#x9;&#x9;
+              .sns_name instagram
+          | &#x9;&#x9;&#x9;
+          a(href='#')
+            .sns_contents
+              .sns_image
+                img(src='images/youtube.png', width='100%')
+              | &#x9;&#x9;&#x9;&#x9;
+              .sns_name youtube
+          | &#x9;&#x9;&#x9;
+          .clearfix
+      | &#x9;
+      .clearfix
+      | &#x9;
+      script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+      | &#x9;
+      script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js', integrity='sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=', crossorigin='anonymous')
+      | &#x9;
+      script(src='js/scriptSmall.js')
+

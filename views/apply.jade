@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  doctype html
+  html
+    head
+      title 지원자등록
+    body
+      .formBorder
+        form(method='post')
+          h1 지원자 등록
+          ul
+            li 작은사회 지원은 1인당 1개의 이메일계정을 이용할 수 있습니다.
+            li 동일인이 여러 이메일을 이용하여 지원하는 경우 불이익이 있을 수 있습니다.
+          .wrap
+            p
+              b 이메일
+              |  입력한 메일로 인증 메일을 발송합니다.
+            input(type='text', name='email')
+          .wrap
+            p
+              b 비밀번호
+            input(type='password', name='password')
+          .wrap
+            p
+              b 비밀번호 확인
+            input(type='password', name='repeat')
+          .wrap
+            p
+              b 이름
+            input(type='text', name='name', placeholder='이름')
+          .wrap
+            p
+              b 생년월일
+            input(type='text', name='birth', placeholder='YYYY-MM-DD')
+          .wrap
+            p
+              b 휴대폰 번호
+            input(type='text', name='number', placeholder='000-0000-0000')
+          .submit
+            input(type='submit', value='등록완료')

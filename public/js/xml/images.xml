@@ -1,0 +1,17 @@
+<node>
+	<config>
+		<width><![CDATA[1440]]></width>
+		<height><![CDATA[630]]></height>
+	</config>
+	<images>
+		<item>
+			<src><![CDATA[images/small1.jpg]]></src>
+		</item>
+		<item>
+			<src><![CDATA[images/small2.jpg]]></src>
+		</item>
+		<item>
+			<src><![CDATA[images/small4.jpg]]></src>
+		</item>
+	</images>
+</node>

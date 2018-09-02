@@ -1,0 +1,217 @@
+extends layout
+
+block content
+  doctype html
+  html
+    head
+      title &#xC791;&#xC740;&#xBAA8;&#xC784;
+    body
+      .meetings
+        ul.meeting_order
+          li
+            a.meeting_a(href='/bookclub') &#xC791;&#xC740;&#xC0AC;&#xC0C9;
+          | &#x9;&#x9;&#x9;
+          li
+            a.meeting_a(href='/artclub') &#xC791;&#xC740;&#xC608;&#xC220;
+          | &#x9;&#x9;&#x9;
+          li
+            a.meeting_a.underLine(href='videoclub',style='border-bottom-color:#{textColorType}') &#xC791;&#xC740;&#xC601;&#xC0C1;
+        | &#x9;&#x9;
+        .clearfix
+      | &#x9;
+      .main
+        .main_text
+          p#text_top
+            | &quot;&#xAE30;&#xC220;&#xC740; &#xC608;&#xC220;&#xC5D0; &#xB3C4;&#xC804;&#xD558;&#xACE0;
+            br
+            | &#xC608;&#xC220;&#xC740; &#xAE30;&#xC220;&#xC5D0; &#xC601;&#xAC10;&#xC744; &#xC900;&#xB2E4;&quot;
+            br
+          | &#x9;&#x9;&#x9;
+          p#author - John Alan Lasseter
+          | &#x9;&#x9;&#x9;
+          p.text_middle
+            br
+            | &#xD53D;&#xC0AC;&#xC758; &#xD504;&#xB85C;&#xB4C0;&#xC11C; &#xC874; &#xB77C;&#xC138;&#xD130;&#xC758; &#xB9D0;&#xCC98;&#xB7FC;
+          | &#x9;&#x9;&#x9;
+          p.text_middle
+            | &#xAE30;&#xC220;&#xB9CC;&#xC73C;&#xB85C; &#xC608;&#xC220;&#xC774; &#xB420;&#xC218;&#xC5C6;&#xACE0;
+            br
+            | &#xAE30;&#xC220;&#xC774; &#xC5C6;&#xC774;&#xB294; &#xC608;&#xC220;&#xC801; &#xAC10;&#xC218;&#xC131;&#xC744;
+            br
+            | &#xC628;&#xC804;&#xD788; &#xD45C;&#xD604;&#xD558;&#xAE30; &#xC5B4;&#xB835;&#xC2B5;&#xB2C8;&#xB2E4;
+          | &#x9;&#x9;&#x9;
+          p.text_middle &#xAE30;&#xC220;&#xACFC; &#xC608;&#xC220;&#xC758; &#xACBD;&#xACC4;&#xB97C; &#xB118;&#xC5B4;
+          | &#x9;&#x9;&#x9;
+          p.text_middle
+            | &#xC77C;&#xC0C1;&#xC758; &#xC544;&#xB984;&#xB2E4;&#xC6C0;&#xC744; &#xB17C;&#xD558;&#xACE0; &#xC601;&#xC0C1; &#xAE30;&#xC220;&#xC744; &#xC775;&#xD788;&#xBA70;
+            br
+            | &#xC6B0;&#xB9AC;&#xAC00; &#xAFC8;&#xAFB8;&#xB294; &#xC138;&#xC0C1;&#xC744; &#xBAA8;&#xB450;&#xC5D0;&#xAC8C; &#xC804;&#xD558;&#xB294;
+          | &#x9;&#x9;&#x9;
+          p.text_middle
+            | &#xC6B0;&#xB9AC;&#xB294;
+            span(style='background-color:#{backgroundColorType}') &#xC791;&#xC740;&#xC601;&#xC0C1;
+            | &#xC785;&#xB2C8;&#xB2E4;.
+        | &#x9;&#x9;
+        .main_photo
+          img(src='images/video1.jpg')
+          | &#x9;&#x9;&#x9;
+          img(src='images/video2.jpg')
+        | &#x9;&#x9;
+        .clearfix
+      | &#x9;
+      .video_player(style='background-color:#{backgroundColorType}')
+        .helper
+        | &#x9;&#x9;
+        video.video(controls autoaplay width='70%', height='70%', src='images/smallvideo.mp4')
+      | &#x9;
+      .meeting_process
+        .text &#xC9C4; &#xD589; &#xACFC; &#xC815;
+        | &#x9;&#x9;
+        p.videoClub_text &#xC2A4;&#xD130;&#xB514;
+        | &#x9;&#x9;
+        .tree_left_videoClub
+          .tree_left_text
+            .tree_left_text_top &#xB530;&#xB77C;&#xCC0D;&#xAE30; / &#xBBA4;&#xBE44;&#xCC0D;&#xAE30; / &#xAD11;&#xACE0;&#xCC0D;&#xAE30;
+            | &#x9;&#x9;&#x9;&#x9;
+            p &#xBB34;&#xACBD;&#xD5D8;&#xC790;&#xB3C4; &#xD568;&#xAED8; &#xD560; &#xC218; &#xC788;&#xC5B4;&#xC694;
+          | &#x9;&#x9;&#x9;
+          .tree_left_text
+            .tree_left_text_top &#xC2E4;&#xC2B5;
+            | &#x9;&#x9;&#x9;&#x9;
+            p &#xC5D0;&#xD504;&#xD130; &#xC774;&#xD399;&#xD2B8;
+        | &#x9;&#x9;
+        .tree_image_videoClub
+          img(src='images/barVideo1.png')
+        | &#x9;&#x9;
+        .tree_right_videoClub
+          .tree_right_text
+            .tree_right_text_top &#xC774;&#xB860;
+            | &#x9;&#x9;&#x9;&#x9;
+            p
+              | &#xB3C5;&#xC11C; &#xD1A0;&#xB860;
+              br
+              | &#xC601;&#xD654;&#xC758; &#xC774;&#xD574;
+              br
+              | &#xC2E4;&#xBB34; &#xC774;&#xB860;
+      | &#x9;
+      .meeting_process
+        p.videoClub_text &#xB2E8;&#xD3B8;&#xC601;&#xD654;
+        | &#x9;&#x9;
+        .tree_left_videoClub(style='top:140px')
+          .tree_left_text(style='margin-bottom: 132px')
+            .tree_left_text_top &#xC2DC;&#xB098;&#xB9AC;&#xC624; &#xC120;&#xC815;
+          | &#x9;&#x9;&#x9;
+          .tree_left_text
+            .tree_left_text_top &#xC601;&#xD654;&#xCD2C;&#xC601;
+        | &#x9;&#x9;
+        .tree_image_videoClub
+          img(src='images/barVideo2.png')
+        | &#x9;&#x9;
+        .tree_right_videoClub(style='top:75px')
+          .tree_right_text(style='margin-bottom: 117px')
+            .tree_right_text_top &#xD300; &#xC5ED;&#xD560; &#xBC30;&#xBD84;
+          | &#x9;&#x9;&#x9;
+          .tree_right_text
+            .tree_right_text_top &#xBC30;&#xC6B0; &#xCE90;&#xC2A4;&#xD305;
+      | &#x9;
+      .plan
+        p.text_top 3&#xAE30; &#xC77C;&#xC815;&#xD45C;
+        | &#x9;&#x9;
+        table
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td &#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xB0A0;&#xC9DC;
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xBAA8;&#xC784;&#xAD6C;&#xBD84;
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xBAA8;&#xC784;&#xC885;&#xB958;
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 1&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 09&#xC6D4; 10&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xC774;&#xB860;(&#xC2A4;&#xD130;&#xB514;)
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 2&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 09&#xC6D4; 24&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xCD2C;&#xC601;, &#xD3B8;&#xC9D1;
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 3&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 10&#xC6D4; 29&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xC774;&#xB860;(&#xC2A4;&#xD130;&#xB514;)
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 4&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 11&#xC6D4; 12&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xC774;&#xB860;, &#xCD2C;&#xC601;
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 5&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 11&#xC6D4; 26&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xCD2C;&#xC601;, &#xD3B8;&#xC9D1;
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 6&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 01&#xC6D4; 14&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xC774;&#xB860;(&#xC2A4;&#xD130;&#xB514;)
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 7&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 01&#xC6D4; 28&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xC774;&#xB860;(&#xC2A4;&#xD130;&#xB514;)
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 8&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 02&#xC6D4; 11&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xC774;&#xB860;, &#xCD2C;&#xC601;
+          | &#x9;&#x9;&#x9;
+          tr(style='border-bottom-color:#{tabelColorType}')
+            td 9&#xD68C;&#xCC28;
+            | &#x9;&#x9;&#x9;&#x9;
+            td 02&#xC6D4; 25&#xC77C;
+            | &#x9;&#x9;&#x9;&#x9;
+            td
+            | &#x9;&#x9;&#x9;&#x9;
+            td &#xCD2C;&#xC601;, &#xD3B8;&#xC9D1;
+        | &#x9;&#x9;
+        p.text_bottom * 3&#xAE30;&#xB294; &#xB2E8;&#xD3B8;&#xC601;&#xD654; &#xC81C;&#xC791;&#xB9CC; &#xC9C4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.
+        | &#x9;&#x9;
+        button(style='background-color:#{tabelColorType}') &#xC9C0;&#xC6D0;&#xD558;&#xAE30;
+      | &#x9;
+      script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+      | &#x9;
+      script(src='js/scriptSmall.js')
